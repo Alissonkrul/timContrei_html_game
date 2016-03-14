@@ -1,0 +1,415 @@
+<html>
+
+	<head>
+		
+		<title>TIMcontrei!</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="data.js"></script>
+		<script type="text/javascript" src="functions.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS.css">
+	</head>
+		
+		
+	<body>
+
+		<div id="pda">		
+			<div id="names">
+				<span class="name" id="1"  >Giba</span>
+				<span class="name" id="2"  >Prof.Pedro</span>
+				<span class="name" id="3"  >Jovem</span>
+				<span class="name" id="4"  >Vigilante</span>
+				<span class="name" id="5"  >Nakamura</span>
+				<span class="name" id="6"  >Prof.Paulo</span>
+				<span class="name" id="7"  >Russo</span>
+				<span class="name" id="8"  >Renato</span>
+				<span class="name" id="9"  >Buiu</span>
+				<span class="name" id="10"  >Cantina</span>		
+			</div>
+			
+			<div id="chat">
+				<span id="faces">
+					<span class="face" id="1"  ><img src="Imagens/personagens/giba_face.png"/></span>
+					<span class="face" id="2"  ><img src="Imagens/personagens/pedro_face.png"/></span>
+					<span class="face" id="3"  ><img src="Imagens/personagens/giba_face.png"/></span>
+					<span class="face" id="4"  ><img src="Imagens/personagens/vigilante_face.png"/></span>
+					<span class="face" id="5"  ><img src="Imagens/personagens/nakamura_face.png"/></span>
+					<span class="face" id="6"  ><img src="Imagens/personagens/paulo_face.png"/></span>
+					<span class="face" id="7"  ><img src="Imagens/personagens/russo_face.png"/></span>
+					<span class="face" id="8"  ><img src="Imagens/personagens/renato_face.png"/></span>
+					<span class="face" id="9"  ><img src="Imagens/personagens/buiu_face.png"/></span>
+					<span class="face" id="10" ><img src="Imagens/personagens/store_face.png"/></span>
+				</span>
+				
+				<div class="speach"></div>
+				<table class="answer"></table>
+				
+			</div>
+		</div>
+	
+
+
+		<!---------------------------------------YARD---------------------------------------------->
+		<span class="map" id="yard" >
+			
+
+			<!--Mapa 1 - Patio ---------------------------------->
+			<div>
+				<img id="background" class="imagem" src="Imagens/mapas/patio.png" />
+			</div>
+			
+			<!--Personagem 3 - CANTINA-------------------------------->
+			<div class="person" id="store" >
+				<img class="ballon" src="Imagens/personagens/OI_per_left.png"/>
+				<img class="imagem" data-id="10" src="Imagens/personagens/per_store.png"/>
+				
+			</div>	
+
+			<!--Personagem 1 - GIBA ---------------------------------->
+			<div class="person" id="giba"  >
+				<img class="imagem" data-id="1" src="Imagens/personagens/giba_per.png">
+				<img class="ballon" src="Imagens/personagens/OI_per_right.png"/>
+				
+			</div>
+			
+			<!--Personagem 2 - 	RENATO ---------------------------------->
+			<div class="person" id="renato"  >
+				<img class="imagem" data-id="8" src="Imagens/personagens/renato_per.png"/>
+				<img class="ballon" src="Imagens/personagens/OI_per_right.png"/>
+				
+			</div>
+
+			<!--Personagem 2 - Pedro ---------------------------------->
+			<div class="person" id="pedro"  >
+				<img class="ballon" src="Imagens/personagens/OI_per_left.png"/>
+				<img class="imagem" data-id="2" src="Imagens/personagens/pedro_per.png"/>
+				
+			</div>
+
+			
+
+		</span>
+		<!---------------------------------------YARD---------------------------------------------->
+		
+		
+
+
+		<!---------------------------------------WOODS---------------------------------------------->
+		<span class="map" id="woods" style="display:none" >
+			<div>
+				<img id="background" class="imagem" src="Imagens/mapas/bosque.png" />
+			</div>
+		
+			<div class="person" id="neto_porta"  >
+				<img class="imagem" data-id="3" src="Imagens/personagens/neto_porta.png"/>
+			
+			</div>
+		
+			<div class="person" id="vigilante"  >
+				<img class="imagem" data-id="4" src="Imagens/personagens/vigilante_per.png"/>
+				<img class="ballon" src="Imagens/personagens/OI_per_right.png"/>
+				
+			</div>
+		</span>
+		<!---------------------------------------WOODS---------------------------------------------->
+		
+		
+
+
+		<!---------------------------------------WOODS_HOUSE---------------------------------------------->
+		<span class="map" id="woods_house" style="display:none">
+			<!--Mapa 3_1 - BOSQUE_Casinha ------------------------------------------>
+			<div>
+				<img id="background" class="imagem" src="Imagens/mapas/bosque_Casinha.png" />
+			</div>
+		
+			<!--Personagem 3 - Neto ---------------------------------->
+			<div class="person" id="neto"  >
+				<img class="imagem" data-id="5" src="Imagens/personagens/Neto_per.png"/>
+				<img class="ballon" src="Imagens/personagens/OI_per_right.png"/>
+			</div>
+
+		</span>
+		<!---------------------------------------WOODS_HOUSE---------------------------------------------->
+	
+	
+	
+		<!---------------------------------------SEC_FLOOR---------------------------------------------->
+		<span class="map" id="sec_floor"  style="display:none">
+			<div>
+				<img id="background" class="imagem" src="Imagens/mapas/Andar_2.png" />
+			</div>
+			
+			<div class="person" id="nakamura"  >
+				<img class="imagem" data-id="5" src="Imagens/personagens/nakamura_per.png"/>
+				<img class="ballon" src="Imagens/personagens/OI_per_right.png"/>
+			</div>
+			
+			<div class="person" id="paulo"  >
+				<img class="imagem" data-id="6" src="Imagens/personagens/paulo_per.png"/>
+				<img class="ballon" src="Imagens/personagens/OI_per_right.png"/>
+			</div>
+		</span>
+		<!---------------------------------------SEC_FLOOR---------------------------------------------->
+		
+		
+		
+		<!---------------------------------------GYM---------------------------------------------->
+		<span class="map" id="gym" style="display:none">
+			<!--Mapa 1 - Patio ---------------------------------->
+			<div>
+				<img id="background" class="imagem" src="Imagens/mapas/estacionamento.png" />
+			</div>
+			
+			
+			
+			<!--Personagem 2 - BUIU ---------------------------------->
+			<span class="person" id="buiu"  >
+				<img class="imagem" data-id="9" src="Imagens/personagens/buiu_per.png" />
+				<img class="ballon" src="Imagens/personagens/OI_per_left.png"/>
+			</span>
+			
+			<div class="person" id="dogs"  >
+				<img class="imagem" data-id="9" src="Imagens/personagens/dogs.gif" />
+				<img class="ballon" src="Imagens/personagens/OI_per_auau.png"/>
+			</div>
+			
+			<!--Personagem 3 - RUSSO ---------------------------------->
+			<span class="person" id="russo"  >
+				<img class="imagem" data-id="7" src="Imagens/personagens/russo_per_2.png"/>
+				<img class="ballon" src="Imagens/personagens/OI_per_right.png"/>
+			</span>
+		</span>
+		<!---------------------------------------GYM---------------------------------------------->
+
+
+		<!---------------------------------------Final 1---------------------------------------------->
+		<span class="map" id="final1" style="display:none">
+			
+			<!-- <div>
+				<img id="background" class="imagem" src="Imagens/mapas/why.jpg" />
+			</div> -->
+
+			<table id="final1" >
+				<tr>
+					<td id="reload" class="final"><button data-id="reload">Tentar novamente</button></td>
+					<td id="close" class="final"><button data-id="close">Sair</button></td>
+					
+				</tr>
+			</table>
+
+			<div id="creditos">
+				<p>Desenvolvido por:</p>
+				<p>Alisson Krul</p>
+				<p>Carlos Grispan</p>
+			</div>
+
+			<span id='final1span'></span>
+
+			
+
+			
+		</span>	
+			
+		<!---------------------------------------Final 1---------------------------------------------->
+
+
+
+		<!---------------------------------------Final 2---------------------------------------------->
+		<span class="map" id="final2" style="display:none">
+			
+			<!-- <div>
+				<img id="background" class="imagem" src="Imagens/mapas/fodase.jpg" />
+			</div> -->
+
+
+
+			<table id="final2" >
+				<tr>
+					<td id="reload" class="final"><button data-id="reload">Tentar novamente</button></td>
+					<td id="close" class="final"><button data-id="close">Sair</button></td>
+					
+				</tr>
+			</table>
+
+			<div id="creditos">
+				<p>Desenvolvido por:</p>
+				<p>Alisson Krul</p>
+				<p>Carlos Grispan</p>
+			</div>
+
+			
+		</span>	
+		<!---------------------------------------Final 2---------------------------------------------->
+
+		
+			
+
+			
+			
+			<table id="table_item" align="center">
+				<tr>
+					<td><img id="beer" class="iten_img" src="Imagens/Itens/bera.png"  ></td>
+					<td><img id="milk" class="iten_img" src="Imagens/Itens/leite_pera.png"  ></td>
+					<td><img id="cable" class="iten_img" src="Imagens/Itens/vga.png"  ></td>
+					<td><img id="choco" class="iten_img" src="Imagens/Itens/alfajor.png"  ></td>
+					<td><img id="coin"  src="Imagens/Itens/coin.png"  ></td>
+					<td id="money"><span id="cash"></span> dilmas</td>
+					<td><img id="clock" src="Imagens/Itens/clock.png" /> </td>
+					<td id="time" ><span id="timeLeft"></span> min</td>
+				</tr>
+			</table>
+			
+			<table id="table_bt_maps" >
+				<tr>
+					<td id="yard" class="locations"><button data-id="yard">Pátio</button></td>
+					<td id="woods" class="locations"><button data-id="woods"> Bosque </button></td>
+					<td id="sec_floor" class="locations"><button data-id="sec_floor">2º Andar</button></td>
+					<td id="gym" class="locations"><button data-id="gym"> Ginásio</button></td>
+				</tr>
+			</table>
+		
+			<div id="block"></div>
+			
+		<script type="text/javascript">
+
+		focusPerson();
+		
+		var person;
+		var item;
+		var cash = 15;
+        var timeLeft = 150;
+
+		$("#cash").html(cash);
+		$("#timeLeft").html(timeLeft);
+		
+		
+		$(".person").on("click","img",function(){
+			
+			person = $(this).data("id");
+			var face = "#"+person;
+
+			timeLeft=timeLeft-5;
+			$("#timeLeft").html(timeLeft);
+			if(timeLeft===0){
+				
+				$('body').hide();
+				
+
+				if(confirm('Acabou seu tempo! Perdeu a entrega do trabalho! Tentar novamente?')){
+					location.reload(true);
+				}else{
+					alert("Obrigado por jogar TIMcontrei.\nTodos os diretos reservados!");
+					close();
+				}
+
+
+			}
+
+			
+			if(person === 9){
+				$("#buiu").show();
+			}	
+			
+			dialog(person, avatar.first[person]);
+
+			$("#chat").show();
+			$(".speach").show();
+			$("#block").css('z-index',4);
+			$("#pda").css('z-index',5);
+			$("#faces").find(face).show();
+		});
+
+
+
+		$(".answer").on("click","button",function(){
+
+			item = $(this).data("id");
+
+			var option = $(this).data("id");
+
+			if(option === 0){
+				avatar.first[person] = 1;
+			}
+
+			$(".dialog").remove();
+			
+			
+			if($.isNumeric(text[person].answer[option][1][0])){
+				dialog(person, text[person].answer[option][1][0]);
+			}else{
+				for(var i=0; i<text[person].answer[option][1].length; i++){
+					action(text[person].answer[option][1][i], person);
+				}					
+			}
+						
+			
+
+		});
+
+
+
+		$(".locations").on("click","button",function(){
+			
+			var map = $(this).data("id");
+			
+
+			if(locations[map]){
+				
+				$(".map").hide();
+				map = "#"+map;
+				$(map).show();
+			}else{
+
+				alert('Mapa Fechado! Descubra primeiro onde fica!')
+			}
+		});
+
+		$("#final1").on("click","button",function(){
+			
+			var option = $(this).data("id");
+
+			
+
+			if(option==="reload"){
+
+				
+				location.reload(true);
+			}else{
+
+				alert("Obrigado por jogar TIMcontrei.\n\nTodos os diretos reservados!");
+				close();
+			}
+		});
+
+		$("#final2").on("click","button",function(){
+			
+			var option = $(this).data("id");
+			
+
+			if(option==="reload"){				
+				location.reload(true);
+			}else{
+
+				alert("Obrigado por jogar TIMcontrei.\n\nTodos os diretos reservados!");
+				close();
+			}
+		});
+
+
+
+
+		</script>
+
+		<div id='finalBody'>
+
+		
+
+
+	</div>
+	
+	
+	</body>
+
+	
+</html>

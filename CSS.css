@@ -1,0 +1,300 @@
+		#giba {
+			z-index:2;
+			position: absolute;
+			top: 12%;
+			left: 41%;
+		}
+		#pedro{
+			z-index:2;
+			position: absolute;
+			top: 30vh;
+			left: 63vw;
+		}
+		#store {
+			z-index:2;
+			position: absolute;
+			top: 30vh;
+			left: 35vw;
+			}
+			
+		#renato {
+			z-index:2;
+			position: absolute;
+			top: 14%;
+			left: 33%;
+		}
+		
+		#nakamura {
+			z-index:2;
+			position: absolute;
+			top: 9%;
+			left: 56%;
+		}		
+		#paulo {
+			z-index:2;
+			position: absolute;
+			top: 30%;
+			left: 40%;
+		}
+		#neto {
+			z-index:2;
+			position: absolute;
+			left:49vw;
+			top: 23vh;
+			
+		}
+		#vigilante {
+			z-index:2;
+			position: absolute;
+			top: 35%;
+			left: 55%;
+		}		
+		#neto_porta {
+			z-index:2;
+			position: absolute;
+			top: 37vh;
+			left: 42.7vw;
+		}
+		#buiu {
+			display:none;
+			z-index:2;
+			position: absolute;
+			top: 11vh;
+			left: 62vw;
+		}
+		#dogs {
+			z-index:2;
+			position: absolute;
+			top: 13vh;
+			left: 58vw;
+			display: none;
+		}
+		
+		#dogs .imagem{
+		height:3vh;
+		}
+		
+		#russo {
+			z-index:2;
+			position:absolute;
+			top: 13vh;
+			left: 47.5vw;
+		}
+		
+		
+		#background {
+			
+			border-radius:5pt;
+			z-index:0;
+			position:absolute center;
+			margin-right:0.9vw;
+			margin-top:8.6vh;
+			height:45vh;
+			width: 35.6vw;
+		}
+		
+
+		#pda{
+			position:absolute;
+			z-index:0;
+			min-height:24vh;
+			min-width:26vw;
+			max-height:24vh;
+			max-width:26vw;
+			top:70.5vh;
+			left:36.5vw;
+		}
+		
+		#chat{
+		 
+			 padding:5;
+			 color:black;
+			 height:70px;
+			 z-index:3;
+			 top:50%;
+			 left:0;
+		 
+		}
+		
+		#table_bt_maps{
+			position:absolute;
+			width:24vw;
+			margin-left:36.5vw;
+			margin-top:31vh;
+			z-index:3;
+		}
+
+		
+		#table_bt_maps td{
+			padding-right:0.5vw;
+			padding-left: 0.5vw;
+		}
+		
+		#table_bt_maps td button{
+			font-size:1.7vh;
+			width:5vw;
+			height:2.5vh;
+		}
+		
+		
+		.iten_img{
+			width:1.5vw;
+			height:3vh;
+		}
+		
+		#coin{
+			width:1.5vw;
+			height:3vh;
+			opacity:1;
+		}
+		
+		#clock{
+			width:1.5vw;
+			height:3vh;
+			opacity:1;
+		}
+		
+		#table_item{
+			position:absolute;
+			width:25.5vw;
+			margin-left:36.5vw;
+			margin-top:34.5vh;
+			z-index:3;
+		}
+		
+		#table_item td{
+			padding-right:0.6vw;
+		
+		}
+		
+		#table_item td img{
+			opacity:0.3;
+		}
+		#chat{
+			margin-top:-1vw;
+		}
+		
+		.face{
+			display:none;
+			position:absolute;
+			top:-31.3vh;
+			left:-4vw;
+		}
+		.face img{
+			height:16vh;
+		
+		}
+		.speach{
+			display:none;
+			position:absolute;
+			font-size:3vh;
+			height:15vh;
+			width:35vw;
+			margin-top:-30vh;
+			margin-left:-4.5vw;
+			background-image:url("Imagens/personagens/Ballon_Talk.png");
+			background-size:100% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-position:relative;
+		}
+		.speach p{
+			position:absolute;
+			top:-0.5vh;
+			left:1vw;
+		}
+		
+		#dialog_main{
+			position:relative;
+			margin-left:7.7vw;
+			max-height:10vh;
+			max-width:25vw;
+			overflow: auto;
+			overflow-x: hidden;
+		}
+		
+		.answer {
+			position:relative;
+			top:1.5vh;
+			font-family:  Verdana, Times, serif;
+		}
+		
+		.answer td button{
+			max-width:24.6vw;
+			width:24.6vw;
+		}
+		
+		.person .imagem
+		{
+			height:4vh;
+		}
+		
+		#store .imagem{
+			height:8vh;
+		}
+		
+		#block{
+			z-index:0;
+			position:absolute;
+			height:100vh;
+			width:50vw;
+			margin-top:-100vh;
+			margin-left:25vw;
+			opacity:0.3;
+		}
+		
+		.name{
+			position:absolute center;
+			top:7vh;
+			left:auto;
+			z-index:4;
+			display:none;
+			font-size:50pt;
+			color:white;
+		}
+		.image{
+			opacity:0.8;
+		}
+		.ballon{
+			opacity:0;
+		}
+		
+		#time, #money{
+			font-size:11pt;
+			font-weight:bold;
+			color:white;
+			text-align: left;
+		}
+
+		#table_item td #coin{
+  		opacity: 1;
+		}	 
+
+		#table_item td #clock{
+  		opacity: 1;
+		}	
+
+		body {
+
+			z-index:1;
+			text-align:center;
+			background-color:black;
+			background-image:url("Imagens/back.png");
+			background-size:60% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-position:absolute;
+			
+		}
+
+		#final1, #final2{
+
+			position: absolute center;
+		}
+
+		#creditos{
+
+			text-align: left;
+			color:white;
+
+		}
